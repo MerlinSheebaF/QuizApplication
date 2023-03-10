@@ -1,0 +1,244 @@
+:root {
+    --brown: rgb(242, 217, 187);
+    --burgundy: rgb(158, 39, 88);
+    --green: rgb(5, 121, 5);
+    --red: rgb(255, 14, 14);
+    --grey: rgb(207, 207, 207);
+    --dullblue: rgb(238, 246, 248);
+}
+
+
+body {
+    background-color: #f1f1f1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-body-tertiary {
+    background-color: #f1f1f1;
+    position: fixed;
+    list-style: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    font-weight: bold;
+}
+
+.mainbg {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+}
+
+.img-fluid {
+    text-align: center;
+    margin: 1% 10%;
+    width: 80%;
+}
+
+.text-center {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.btn-warning {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.btn-warning:hover {
+    color: grey;
+}
+
+.container-sm {
+    background-color: white;
+    margin: 2% 15%;
+    border-radius: 5px;
+    padding: 10px;
+    width: 70%;
+    box-shadow: 0 0 50px var(--grey);
+}
+
+.questioncontainer {
+    background-image: url(https://merlin-sheeba.co.uk/QuizApplication/assets/question.webp);
+    padding: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+#question {
+    font-size: 20px;
+    color: #f1f1f1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.optioncontainer {
+    margin: 0% 25%;
+    width: 80%;
+}
+
+.option {
+    background-image: url(https://merlin-sheeba.co.uk/QuizApplication/assets/optionbg.webp);
+    width: 30%;
+    height: auto;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    color: darkblue;
+    font-size: 20px;
+
+}
+
+#op2,
+#op4 {
+    margin-left: 20px;
+    margin-top: 7%;
+}
+
+.option:hover,
+.option:focus {
+    color: grey;
+    cursor: pointer;
+}
+
+.result {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.evalcontainer {
+    text-align: left;
+    margin-top: 5%;
+}
+
+.evaluate {
+    color: white;
+    font-size: 20px;
+    text-align: top;
+    padding: 5px;
+    cursor: pointer;
+    border: 0px solid white;
+    width: 155px;
+    font-weight: bold;
+    vertical-align: top;
+    margin: 2% 42%;
+}
+
+.next {
+    background-image: url(https://merlin-sheeba.co.uk/QuizApplication/assets/next.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 45px;
+    border: none;
+    margin-left: 48%;
+
+
+}
+
+.percentagecontainer,
+.scorecontainer {
+    text-align: center;
+    background-color: azure;
+}
+
+
+.score {
+    color: #094657;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    background-color: bisque;
+
+}
+
+.percent {
+    color: #094657;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 768px) {
+    .text-center {
+        font-size: 25px;
+
+    }
+
+    .btn-warning {
+        font-size: 15px;
+
+    }
+
+    .img-fluid {
+        margin: 16% 5%;
+        width: 90%;
+    }
+
+    .optioncontainer {
+        margin: 0px 5%;
+        width: 90%;
+
+    }
+
+    .option {
+
+        width: 100%;
+        height: auto;
+    }
+
+    #op2,
+    #op4 {
+        margin-top: 7%;
+        margin-left: 0%;
+    }
+
+    #op3 {
+        margin-top: 7%;
+    }
+
+    .evaluate {
+        margin-left: 25%;
+    }
+
+    .next {
+        margin-left: 42%;
+    }
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+
+    background: white;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightblue;
+    border-radius: 10px;
+    height: 20px;
+}
